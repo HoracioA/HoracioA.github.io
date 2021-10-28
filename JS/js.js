@@ -50,3 +50,5 @@ e6.onmouseover = function() {
 e6.onmouseout = function() {
   document.getElementById('info6').style.display = 'none';
 }
+
+
