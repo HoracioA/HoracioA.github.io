@@ -57,6 +57,39 @@ body {
     
     
 }
+.imagen {
+  
+  grid-area: imagen;
+  background-color: #00aeed73;
+  border-radius: 15px;
+
+
+}
+.descripcion {
+  grid-area: descripcion;
+  background-color: #00aeed73;
+  border-radius: 15px;
+}
+.especificaciones {
+  grid-area: especificaciones;
+  background-color: #00aeed73;
+  border-radius: 15px;
+}
+
+.gird-c-2 {
+  display: grid;
+  gap: 10px;
+  
+  grid-template:
+  "imagen"  auto
+  "descripcion" auto
+  "especificaciones" auto
+ 
+}
+
+
+
+
 
 .navbar {
   grid-area: navbar;
@@ -68,12 +101,7 @@ body {
   
 }
 
-.main {
-  grid-area: main;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns:  1fr;
-}
+
 
 .footer {
   grid-area: footer;
@@ -110,6 +138,17 @@ body {
   .main{
   grid-template-columns: repeat(2,1fr);
   }
+  .gird-c-2 {
+    display: grid;
+    gap: 10px;
+    
+    grid-template:
+    "imagen"  auto
+    "descripcion" auto
+    "especificaciones" auto
+   
+  }
+  
 }
 
 @media (min-width: 900px) {
@@ -125,6 +164,16 @@ body {
   .main{
     grid-template-columns: repeat(3,1fr);
     }
+    .gird-c-2 {
+      display: grid;
+      gap: 10px;
+      
+      grid-template:
+      "imagen descripcion" 400px
+      "especificaciones especificaciones" auto
+     
+    }
+    
 }
 
 .divMain{  
@@ -137,8 +186,6 @@ body {
 }
 .divMain:hover{
   border: 1px solid blue;
-  background-color: #00aeed73;
-  border-radius: 15px;
 }
 
 
